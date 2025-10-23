@@ -1,0 +1,136 @@
+{
+  "forms": [
+    {
+      "id": "contact_form",
+      "title": "Contact Form",
+      "description": "Help us improve by answering a few questions.",
+      "isMultiPage": false,
+      "pages": [
+        {
+          "pageNumber": 1,
+          "questions": [
+            {
+              "id": "q1",
+              "text": "Your Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "id": "q2",
+              "text": "Email",
+              "type": "email",
+              "required": true
+            },
+            {
+              "id": "q3",
+              "text": "Message",
+              "type": "textarea",
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "survey_experience",
+      "title": "User Experience Survey",
+      "description": "Tell us how you interacted with our service.",
+      "isMultiPage": true,
+      "pages": [
+        {
+          "pageNumber": 1,
+          "questions": [
+            {
+              "id": "q1",
+              "text": "How often do you use our website?",
+              "type": "select",
+              "options": [
+                "Daily",
+                "Once a week",
+                "Once a month",
+                "Rarely"
+              ],
+              "required": true
+            },
+            {
+              "id": "q2",
+              "text": "How satisfied are you with the website speed?",
+              "type": "rating",
+              "scale": 5,
+              "required": true
+            }
+          ]
+        },
+        {
+          "pageNumber": 2,
+          "questions": [
+            {
+              "id": "q3",
+              "text": "What features would you like us to add?",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "id": "q4",
+              "text": "Would you recommend us to your friends?",
+              "type": "radio",
+              "options": [
+                "Yes",
+                "No"
+              ],
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "registration_form",
+      "title": "Participant Registration",
+      "description": "Fill out this form to participate in the event.",
+      "isMultiPage": true,
+      "pages": [
+        {
+          "pageNumber": 1,
+          "questions": [
+            {
+              "id": "q1",
+              "text": "Full Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "id": "q2",
+              "text": "Age",
+              "type": "number",
+              "required": true
+            }
+          ]
+        },
+        {
+          "pageNumber": 2,
+          "questions": [
+            {
+              "id": "q3",
+              "text": "Select your areas of interest",
+              "type": "checkbox",
+              "options": [
+                "Design",
+                "Programming",
+                "Marketing",
+                "Management"
+              ],
+              "required": false
+            },
+            {
+              "id": "q4",
+              "text": "Do you want to receive news about the upcoming event?",
+              "type": "switch",
+              "required": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
